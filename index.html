@@ -11,7 +11,8 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: #f0f0f0;
+            background-color: #121212;
+            color: #ffffff;
             margin: 0;
         }
 
@@ -29,6 +30,18 @@
             align-items: center;
         }
 
+        .controls button, .controls select {
+            background-color: #333;
+            color: #fff;
+            border: 1px solid #444;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        .controls button:hover, .controls select:hover {
+            background-color: #444;
+        }
+
         .grid {
             display: grid;
             justify-content: center;
@@ -38,14 +51,15 @@
         .cell {
             width: 100%;
             padding-top: 100%; /* Makes the cell a square */
-            background-color: #ddd;
-            border: 1px solid #aaa;
+            background-color: #333;
+            border: 1px solid #444;
             display: flex;
             justify-content: center;
             align-items: center;
             cursor: pointer;
             user-select: none;
             position: relative;
+            color: #fff;
         }
 
         .cell span {
@@ -60,12 +74,12 @@
         }
 
         .cell.revealed {
-            background-color: #eee;
+            background-color: #555;
             cursor: default;
         }
 
         .cell.flagged {
-            background-color: #ffa;
+            background-color: #ffa500;
         }
     </style>
 </head>
